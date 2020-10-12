@@ -4,7 +4,8 @@
   "description": "A program to implement authentication and authorization using Node.JS, Express.JS, MongoDB and JSON Web Token.",
   "main": "app.js",
   "scripts": {
-    "test": "start app.js"
+    "start": "cross-env NODE_ENV=production node app",
+    "dev": "cross-env NODE_ENV=development nodemon app"
   },
   "keywords": [
     "authentication",
@@ -15,10 +16,13 @@
   "dependencies": {
     "bcrypt": "^5.0.0",
     "cookie-parser": "^1.4.5",
+    "cross-env": "^7.0.2",
+    "dotenv": "^8.2.0",
     "ejs": "^3.1.5",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.10.8",
+    "morgan": "^1.10.0",
     "validator": "^13.1.17"
   }
 }
