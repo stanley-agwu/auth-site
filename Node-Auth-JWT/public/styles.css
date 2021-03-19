@@ -10,7 +10,7 @@
   margin: 0 10px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 75px auto 30px;
+  grid-template-rows: 0.1fr 5fr 30px;
   grid-gap: 0;
   background: #ffffff;
 }
@@ -18,12 +18,24 @@
   grid-column: 1/-1;
   grid-row: 1/2;
   background-color: #e6e6e6;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.menu .logo-container{
+  grid-column: 1/2;
+  margin: 10px auto;
+  width: 100%;
+  color: #262626;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.5em;
 }
 .menu ul {
+  grid-column: 2/-1;
   display: grid;
   align-items: center;
   justify-content: space-between;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 .menu ul a {
   text-decoration: none;
@@ -40,6 +52,7 @@
 .logo-container{
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .logo-container .logo-text {
   text-decoration: none;
@@ -162,7 +175,6 @@
   font-weight: 600;
   margin: 10px;
 }
-
 .form{
   grid-column: 2/11;
   width: 100%;
@@ -233,5 +245,21 @@
     .app-text{
       grid-column: 1/-1;
       grid-row: 2/3;
+    }
+    .menu{
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+    }
+    .menu .logo-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .menu ul{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
     }
 }

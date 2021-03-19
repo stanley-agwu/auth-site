@@ -9,27 +9,27 @@
   <body>
     <div class="main-container">
       <div class="menu">
+        <div class="logo-container">
+          <a href="/"><svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-dice-5" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M13 1H3a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zM3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3z"/>
+              <circle cx="4" cy="4" r="1.5"/>
+              <circle cx="12" cy="4" r="1.5"/>
+              <circle cx="12" cy="12" r="1.5"/>
+              <circle cx="4" cy="12" r="1.5"/>
+              <circle cx="8" cy="8" r="1.5"/>
+            </svg>
+          </a>
+          <span><p ><a class="logo-text" href="/">5 Stack Crypto</a></p></span>
+        </div>
         <ul>
-          <li class="logo-container">
-            <a href="/"><svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-dice-5" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M13 1H3a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zM3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3z"/>
-                <circle cx="4" cy="4" r="1.5"/>
-                <circle cx="12" cy="4" r="1.5"/>
-                <circle cx="12" cy="12" r="1.5"/>
-                <circle cx="4" cy="12" r="1.5"/>
-                <circle cx="8" cy="8" r="1.5"/>
-              </svg>
-            </a>
-            <span><p ><a class="logo-text" href="/">5 Stack Crypto</a></p></span>
-          </li>
-          <li><a href="/" >Home</a></li>
+          <li><a  href="/">Home</a></li>
           <li><a href="/markets" >Markets</a></li>
           <% if (user) { %>
             <li class="welcome">Welcome, <%= user.email %></li>
-            <li><a href="/logout" class="logout-btn btn"><span>Log out</span></a></li>
+            <li><a href="/logout" class="logout-btn btn">Log out</a></li>
           <% } else { %>
-            <li><a href="/login" class="login-btn btn"><span>Log in</span></a></li>
-            <li><a href="/signup" class="signup-btn btn"><span>Sign up</span></a></li>
+            <li><a href="/login" class="login-btn btn">Log in</a></li>
+            <li><a href="/signup" class="signup-btn btn">Sign up</a></li>
           <% } %>
         </ul>
       </div>
