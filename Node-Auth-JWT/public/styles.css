@@ -232,7 +232,7 @@
     color: #030301;;
     font-size: 1em;
 }
-@media (max-width: 1050px){
+@media (max-width: 786px){
   .banner{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -260,6 +260,9 @@
     .menu ul{
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto auto;
+      grid-template-rows: 1fr 1fr;
+    }
+    .menu ul li {
+      text-align: center;
     }
 }
